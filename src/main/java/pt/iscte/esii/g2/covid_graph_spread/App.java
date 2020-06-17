@@ -3,14 +3,9 @@ package pt.iscte.esii.g2.covid_graph_spread;
 import pt.iscte.esii.g2.covid_graph_spread.generators.HTMLGenerator;
 import pt.iscte.esii.g2.covid_graph_spread.git.GitManager;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
-	
-	// Application output should be generated here
+	// Application output should be an HTML snippet to integrate into the PHP page
     public static void main( String[] args )
     {
     	HTMLGenerator html = new HTMLGenerator();
