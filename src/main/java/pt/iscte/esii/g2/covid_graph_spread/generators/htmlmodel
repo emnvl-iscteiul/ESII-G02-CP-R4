@@ -1,0 +1,10 @@
+<table style="border: 1px solid black; border-collapse: collapse; padding: 10px">
+    <tr>
+        <th>File Timestamp</th>
+        <th>File name</th>
+        <th>File tag</th>
+        <th>Tag Description</th>
+        <th>Spread Visualization</th>
+    </tr>
+    %DATA%
+</table>
