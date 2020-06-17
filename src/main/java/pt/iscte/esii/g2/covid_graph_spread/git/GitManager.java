@@ -63,6 +63,7 @@ public class GitManager {
 		} catch (GitAPIException e) {
 			e.printStackTrace();
 		}
+		cleanupTemp(); //Cleans the temp repo after retrieving all the data
 		return lst.toArray(new TableLine[lst.size()]); //Return that bulk of data
 	}
 	
@@ -112,6 +113,10 @@ public class GitManager {
 		String tagName = tag.getName().replace("refs/tags/", "");
 		String base = "https://raw.githubusercontent.com/vbasto-iscte/ESII1920/";
 		return base + tagName + "/" + file;
+	}
+	
+	private boolean cleanupTemp() {
+		return deleteDirectory(new File(workingDir + "/vbasto-iscte/ESII1920"));
 	}
 	
 }
